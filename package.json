@@ -1,0 +1,37 @@
+{
+	"name": "create-my-react-app",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"react": "^17.0.0-rc.2",
+		"react-dom": "^17.0.0-rc.2",
+		"react-scripts": "^4.0.0-next.98"
+	},
+	"scripts": {
+		"tw-dev": "tailwind build -o src/stylesheets/tailwind/out.css",
+		"tw-build": "NODE_ENV=production yarn tw-dev",
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@tailwindcss/ui": "^0.6.2",
+		"tailwindcss": "^1.8.10"
+	}
+}
